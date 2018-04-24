@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Validation example</title>
+  <style type="text/css" src="./main.css"></style>
+  <script type="text/javascript" src="./vanilla.js"></script>
+</head>
+<body>
+<h3>Form validation</h3>
+<div class="formState"></div>
+<form name="validation-form">
+  <div>
+    <label for="email">Email</label>
+    <input
+      onfocusin="onFocus(this)"
+      onkeypress="onChange(this)"
+      type="email"
+      name="email"
+      placeholder="sarah@parker.com">
+    <span class="message"></span>
+  </div>
+  <div>
+    <label for="name">Full name</label>
+    <input
+      onfocusin="onFocus(this)"
+      type="text"
+      name="name"
+      placeholder="Sarah Parker">
+    <span class="message"></span>
+  </div>
+  <div>
+    <label for="password">Password</label>
+    <input
+      onfocusin="onFocus(this)"
+      type="password"
+      name="password"
+      placeholder="password">
+    <span class="message"></span>
+  </div>
+  <div>
+    <label for="numbers">Age</label>
+    <input
+      onfocusin="onFocus(this)"
+      type="text"
+      name="numbers"
+      placeholder="26">
+    <span class="message"></span>
+  </div>
+</form>
+  <script type="text/javascript" src="./validation.js"></script>
+  <script type="text/javascript" src="./index.js"></script>
+</body>
+</html>
